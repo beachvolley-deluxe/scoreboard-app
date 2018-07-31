@@ -1,0 +1,16 @@
+{
+    "name": "org.beachvolleydeluxe.scoreboard",
+    "version": "1.0.0",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "displayName": "scoreboard",
+    "dependencies": {
+        "cordova-plugin-insomnia": "git+https://github.com/EddyVerbruggen/Insomnia-PhoneGap-Plugin.git"
+    },
+    "cordova": {
+        "plugins": {
+            "cordova-plugin-insomnia": {}
+        }
+    }
+}
