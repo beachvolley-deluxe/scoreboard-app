@@ -1,16 +1,18 @@
 {
-    "name": "org.beachvolleydeluxe.scoreboard",
+    "name": "com.beachvolleydeluxe.scoreboard",
     "version": "1.0.0",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "displayName": "scoreboard",
+    "displayName": "BVD Scoreboard",
     "dependencies": {
-        "cordova-plugin-insomnia": "git+https://github.com/EddyVerbruggen/Insomnia-PhoneGap-Plugin.git"
+        "cordova-plugin-insomnia": "git+https://github.com/EddyVerbruggen/Insomnia-PhoneGap-Plugin.git",
+        "cordova-plugin-whitelist": "^1.3.3"
     },
     "cordova": {
         "plugins": {
-            "cordova-plugin-insomnia": {}
+            "cordova-plugin-insomnia": {},
+            "cordova-plugin-whitelist": {}
         }
     }
 }
