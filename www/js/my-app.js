@@ -77,10 +77,13 @@ $$(document).on('deviceready', function() {
     app.form.fillFromData('#secret-form', app.form.getFormData('secret-form'));
 
     // Load current scores on app start
+    var preload = app.dialog.preloader('Bezig met laden...');
     app.request.json('https://scoreboard.beachvolleydeluxe.be/api', function(response, status) {
         // Success callback
         apiResponse(response);
+        preload.close();
     }, function(xhr, status) {
+        preload.close();
         app.dialog.alert('An error occured trying to load the scores.', 'Failure');
     });
 
